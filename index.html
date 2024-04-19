@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>SignUp page</h1>
+        <form id="form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="JONE" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="+55 555555555" name="phone" required pattern="[0-9]{10}">
+            </div>
+            <div class="form-group">
+                <label for="eamil">Enter your Email id</label>
+                <input type="email" id="eamil" placeholder="email@gamil.com" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="website">website Url</label>
+                <input type="url" id="website" placeholder="https://example.com" name="website" required>
+            </div>
+            <div class="form-group">
+                <label for="password1">password</label>
+                <input type="password" id="password1" placeholder="Enter your password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" title="Enter 8-diigit password 
+                that conatin atleast one upper case alphabate and lower case alphabate" >
+            </div>
+            <div class="form-group">
+                <label for="password2">conform Password</label>
+                <input type="password" id="password2" placeholder="re-enter your password" name="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <div class="message-container">
+            <h1 id="message">Don't Hasilate</h1>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
